@@ -1,0 +1,78 @@
+SOUENT - COMPLETE FILE LISTING
+================================
+
+BACKEND (Python/FastAPI):
+├── app/
+│   ├── __init__.py
+│   ├── main.py (130 lines) - FastAPI application entry point
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── chat.py (178 lines) - Chat endpoints
+│   │   ├── memory.py (159 lines) - Memory management endpoints
+│   │   └── system.py (164 lines) - System status endpoints
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── config.py (96 lines) - Configuration management
+│   │   ├── init_db.py (70 lines) - Database initialization
+│   │   └── logging_config.py (70 lines) - Logging setup
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── schemas.py (123 lines) - Pydantic data models
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── ai_engine/
+│   │   │   ├── __init__.py
+│   │   │   ├── anthroi_prompts.py (167 lines) - Anthroi-1 system prompt
+│   │   │   └── engine.py (176 lines) - AI model integration
+│   │   ├── memory/
+│   │   │   ├── __init__.py
+│   │   │   └── memory_service.py (355 lines) - Context Weave System
+│   │   └── tone/
+│   │       ├── __init__.py
+│   │       └── harmonization.py (197 lines) - Tone harmonization layer
+│   └── utils/
+│       ├── __init__.py
+│       ├── rate_limiter.py (108 lines) - Rate limiting middleware
+│       └── validation.py (140 lines) - Input validation
+├── requirements.txt - Python dependencies
+├── .env.example - Environment template
+└── Dockerfile - Docker containerization
+
+FRONTEND (React/TypeScript):
+├── src/
+│   ├── main.tsx (8 lines) - Application entry
+│   ├── App.tsx (22 lines) - Root component
+│   ├── index.css (616 lines) - Complete styling
+│   ├── components/
+│   │   ├── ChatInterface.tsx (78 lines) - Main chat UI
+│   │   ├── Header.tsx (37 lines) - App header
+│   │   ├── MessageBubble.tsx (46 lines) - Message display
+│   │   ├── MessageInput.tsx (78 lines) - Input component
+│   │   ├── MessageList.tsx (20 lines) - Message list
+│   │   └── StatusBar.tsx (63 lines) - Status indicator
+│   ├── services/
+│   │   └── api.ts (140 lines) - API client
+│   ├── stores/
+│   │   └── chatStore.ts (117 lines) - State management
+│   ├── types/
+│   │   └── index.ts (56 lines) - TypeScript types
+│   └── utils/
+│       └── format.ts (35 lines) - Utility functions
+├── package.json - NPM dependencies
+├── tsconfig.json - TypeScript config
+├── vite.config.ts - Vite config
+├── index.html - HTML template
+├── .env.example - Environment template
+├── Dockerfile - Docker containerization
+└── nginx.conf - Production server config
+
+DEPLOYMENT:
+├── docker-compose.yml - Full stack deployment
+├── docs/
+│   ├── QUICKSTART.md - 5-minute setup guide
+│   ├── api.md - Complete API documentation
+│   └── deployment.md - Production deployment guide
+├── .gitignore
+└── README.md - Main documentation
+
+TOTAL: 43+ files, 3,051 lines of production code
